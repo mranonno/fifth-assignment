@@ -13,11 +13,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style/style.css" />
   </head>
-  <body>
+  <body class="container mx-auto">
     <!------ Header Section ----->
-    <header>
+    <header class="lg:px-[134px] lg:mt-12 px-4 mt-4">
       <!------ Nav Section ----->
-      <nav></nav>
+      <nav class="flex justify-between items-center">
+        <!------ Menu Bar ----->
+        <div class="w-7 lg:hidden">
+          <img src="./icons/menu.svg" alt="" />
+        </div>
+        <!------ Website Name ----->
+        <div class="text-4xl font-extrabold">
+          <h1>P-Ticket</h1>
+        </div>
+        <!------ Anchors Ul ----->
+        <ul class="hidden lg:flex gap-8 text-lg">
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Destination</a></li>
+          <li><a href="">Search</a></li>
+        </ul>
+        <!------ Bus Button ----->
+          <button class="text-xl font-bold primary-color bg-[#1DD1001A] border-2 border-[#1dd10066] px-[30px] py-4 rounded-xl flex gap-2 items-center">Bus <img src="./icons/bus-icon.svg" alt=""></button>
+      </nav>
       <!------ Banner Section ----->
       <div></div>
     </header>
