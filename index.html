@@ -20,24 +20,85 @@
       <nav class="flex justify-between items-center">
         <!------ Menu Bar ----->
         <div class="w-7 lg:hidden">
-          <img src="./icons/menu.svg" alt="" />
+          <img src="./images/menu.svg" alt="" />
         </div>
         <!------ Website Name ----->
-        <div class="text-4xl font-extrabold">
+        <div class="lg:text-4xl text-3xl font-extrabold">
           <h1>P-Ticket</h1>
         </div>
         <!------ Anchors Ul ----->
-        <ul class="hidden lg:flex gap-8 text-lg">
+        <ul class="hidden lg:flex gap-8 text-lg font-medium desc-color">
           <li><a href="">Home</a></li>
           <li><a href="">About</a></li>
           <li><a href="">Destination</a></li>
           <li><a href="">Search</a></li>
         </ul>
         <!------ Bus Button ----->
-          <button class="text-xl font-bold primary-color bg-[#1DD1001A] border-2 border-[#1dd10066] px-[30px] py-4 rounded-xl flex gap-2 items-center">Bus <img src="./icons/bus-icon.svg" alt=""></button>
+        <button
+          class="text-xl font-bold primary-color bg-[#1DD1001A] border-2 border-[#1dd10066] lg:px-[30px] px-[18px] lg:py-4 py-2 rounded-xl flex gap-2 items-center"
+        >
+          Bus <img src="./images/bus-icon.png" alt="" />
+        </button>
       </nav>
       <!------ Banner Section ----->
-      <div></div>
+      <div class="mt-8 relative">
+        <div
+          class="hero lg:min-h-[550px] bg-[url('./images/banner.png')] rounded-3xl"
+        >
+          <div class="hero-content text-center text-neutral-content pt-8">
+            <div>
+              <h1
+                class="mb-5 text-3xl lg:text-6xl lg:leading-[80px] font-bold text-white"
+              >
+                End-to-End Travel with<br /><span class="primary-color"
+                  >P Paribahan</span
+                >
+              </h1>
+              <p class="mb-4 lg:mb-10 lg:text-lg text-white">
+                Travel with P Paribhahan: seamless, efficient, comfortable,
+                reliable. From booking to arrival,<br />experience top-notch
+                service and satisfaction guaranteed.
+              </p>
+              <button
+                class="bg-[#1dd100] lg:px-[30px] px-[20px] lg:py-5 py-3 rounded-xl text-black text-xl font-bold mb-10"
+              >
+                Buy Tickets
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="absolute -bottom-28 left-36 hidden lg:flex items-center gap-5"
+        >
+          <div
+            class="w-[308px] h-32 bg-white border-b-4 border-[#1dd100] mb-10 rounded-3xl flex items-center gap-4 pl-8"
+          >
+            <div><img src="./images/people.png" /></div>
+            <div>
+              <h1 class="text-4xl font-bold font-inter">500K+</h1>
+              <p class="font-inter text-lg desc-color">Registered users</p>
+            </div>
+          </div>
+          <div
+            class="w-[308px] h-32 bg-white border-b-4 border-[#1dd100] mb-10 rounded-3xl flex items-center gap-4 pl-8"
+          >
+            <div><img src="./images/ticket-cupon.png" /></div>
+            <div>
+              <h1 class="text-4xl font-bold font-inter">1.7 lacks</h1>
+              <p class="font-inter text-lg desc-color">Tickets sold</p>
+            </div>
+          </div>
+          <div
+            class="w-[308px] h-32 bg-white border-b-4 border-[#1dd100] mb-10 rounded-3xl flex items-center gap-4 pl-8"
+          >
+            <div><img src="./images/people.png" /></div>
+            <div>
+              <h1 class="text-4xl font-bold font-inter">80K+</h1>
+              <p class="font-inter text-lg desc-color">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!------ Main Section ----->
     <main>
