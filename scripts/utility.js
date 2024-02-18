@@ -22,7 +22,7 @@ function addToContainer(id, seatNumber) {
         const li2 = document.createElement('li');
         const li3 = document.createElement('li');
         li1.innerText = seatNumber;
-        li2.innerText = 'Economic';
+        li2.innerText = 'Economy';
         li3.innerText = '550';
         ul.appendChild(li1)
         ul.appendChild(li2)
