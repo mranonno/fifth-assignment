@@ -235,7 +235,9 @@
           <!------ left side of destination ----->
           <div class="flex flex-col items-center">
             <!------ greenline paribhahan & 40 Seats ----->
-            <div class="flex lg:flex-row flex-col items-center justify-between mb-6 w-full">
+            <div
+              class="flex lg:flex-row flex-col items-center justify-between mb-6 w-full"
+            >
               <!------ greenline ----->
               <div class="flex items-center gap-4">
                 <div><img src="./images/bus-logo.png" alt="" /></div>
@@ -332,11 +334,43 @@
       <section></section>
     </main>
     <!------ Footer Section ----->
-    <footer>
+    <footer class="bg-black100 lg:py-[120px] lg:px-[135px] py-5">
       <!------ Web Details & Download Section ----->
-      <section></section>
+      <section class="flex lg:flex-row flex-col justify-between items-center mb-12">
+              <!------ footer title ----->
+        <div>
+          <h3 class="text-white text-4xl font-extrabold mb-3 text-center lg:text-start">P-Ticket</h3>
+          <p class="text-[#FFFFFFCC] text-lg font-inter lg:text-start text-center">
+            P-Ticket is a digital platform to make your <br />
+            daily commuting better.
+          </p>
+        </div>
+              <!------ download option ----->
+        <div>
+          <h4 class="text-white text-xl font-semibold mb-3 mt-4">Download our app</h4>
+          <div class="flex gap-4 border items-center px-4 py-1 rounded-lg">
+            <div><img src="./images/playstore.png" alt="" /></div>
+            <div class="text-white">
+              <p class="font-light text-xs">GET IT ON</p>
+              <h4 class="font-bold">Google Play</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="border-dashed" />
       <!------ Copyrights Section ----->
-      <section></section>
+      <section class="flex lg:flex-row flex-col-reverse justify-between items-center mt-8">
+        <div>
+          <p class="text-[#FFFFFFB3]">
+            @all rights reserved, P-Ticket services limited.2024
+          </p>
+        </div>
+        <ul class="text-white font-inter font-medium flex lg:flex-row flex-col lg:gap-8 gap-3 text-center mb-4">
+          <li><a href="">Terms & condition</a></li>
+          <li><a href="">Return & refund policy</a></li>
+          <li><a href="">Privacy policy</a></li>
+        </ul>
+      </section>
     </footer>
     <script src="./scripts/app.js"></script>
     <script src="./scripts/utility.js"></script>
