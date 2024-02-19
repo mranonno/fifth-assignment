@@ -31,9 +31,7 @@ function clickHandler() {
   const discount = document.getElementById("discount");
   const discountPrice = document.getElementById("discount-price");
   console.log(couponValue, totalPrice);
-  if (couponValue !== "NEW15" || couponValue !== "Couple 20") {
-    alert("Please given the valid Coupon");
-  }
+  
   if (couponValue === "NEW15") {
     const newGrandPrice = totalPrice - totalPrice * 0.15;
     grandPrice.innerText = newGrandPrice;
@@ -48,6 +46,10 @@ function clickHandler() {
     discount.classList.remove("hidden");
     discountPrice.innerText = totalPrice * 0.2;
     inputField.classList.add("hidden");
+  }
+
+  else{
+    alert("Please given the valid Coupon");
   }
   document.getElementById("coupon-input").value = "";
 }
