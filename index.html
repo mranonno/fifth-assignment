@@ -86,10 +86,10 @@
           </div>
         </div>
         <div
-          class="absolute -bottom-28 left-36 hidden lg:flex items-center gap-5"
+          class="lg:absolute lg:-bottom-28 lg:left-36 flex lg:flex-row flex-col items-center lg:gap-5 mt-5"
         >
           <div
-            class="w-[308px] h-32 bg-white border-b-4 border-[#1dd100] mb-10 rounded-3xl flex items-center gap-4 pl-8"
+            class="w-[308px] h-32 bg-white border-b-4 border-[#1dd100] mb-10 rounded-3xl flex items-center gap-4 pl-8 drop-shadow-lg"
           >
             <div><img src="./images/people.png" /></div>
             <div>
@@ -98,7 +98,7 @@
             </div>
           </div>
           <div
-            class="w-[308px] h-32 bg-white border-b-4 border-customGreen mb-10 rounded-3xl flex items-center gap-4 pl-8"
+            class="w-[308px] h-32 bg-white border-b-4 border-customGreen mb-10 rounded-3xl flex items-center gap-4 pl-8 drop-shadow-lg"
           >
             <div><img src="./images/ticket-cupon.png" /></div>
             <div>
@@ -109,7 +109,7 @@
             </div>
           </div>
           <div
-            class="w-[308px] h-32 bg-white border-b-4 border-[#1dd100] mb-10 rounded-3xl flex items-center gap-4 pl-8"
+            class="w-[308px] h-32 bg-white border-b-4 border-customGreen mb-10 rounded-3xl flex items-center gap-4 pl-8 drop-shadow-lg"
           >
             <div><img src="./images/stoppage.png" /></div>
             <div>
@@ -121,18 +121,18 @@
       </div>
     </header>
     <!------ Main Section ----->
-    <main id="main">
+    <main>
       <!------ Best Offer Section ----->
       <section
-        class="lg:mt-48 mt-5 flex flex-col lg:gap-12 gap-6 items-center font-raleway"
+        class="lg:mt-48 flex flex-col lg:gap-12 gap-6 items-center font-raleway"
       >
         <h2 class="text-[40px] font-bold text-black100">Best offers for you</h2>
         <div class="flex flex-col lg:flex-row gap-6 mb-3 px-4">
           <div
-            class="lg:w-[575px] lg:h-56 h-36 bg-[#FFBF0F] rounded-3xl relative"
+            class="lg:w-[575px] w-full lg:h-56 h-36 bg-[#FFBF0F] rounded-3xl relative"
           >
             <div
-              class="flex lg:justify-between items-center h-full lg:px-12 px-4 gap-14"
+              class="flex justify-between lg:justify-between items-center h-full lg:px-12 px-4 gap-12"
             >
               <div class="font-inter">
                 <h3
@@ -149,7 +149,7 @@
               </div>
               <div>
                 <h3
-                  class="text-black100 lg:text-3xl text-2xl font-bold leading-9"
+                  class="text-black100 text-center lg:text-3xl text-2xl font-bold leading-9"
                 >
                   NEW15
                 </h3>
@@ -167,10 +167,10 @@
             </div>
           </div>
           <div
-            class="lg:w-[575px] lg:h-56 h-36 bg-[#F78C9C] rounded-3xl relative"
+            class="lg:w-[575px] w-full lg:h-56 h-36 bg-[#F78C9C] rounded-3xl relative"
           >
             <div
-              class="flex justify-between items-center h-full lg:px-12 px-4 gap-14"
+              class="flex justify-between items-center h-full lg:px-12 px-4 gap-12"
             >
               <div class="font-inter">
                 <h3
@@ -191,7 +191,9 @@
                 >
                   Couple 20
                 </h3>
-                <p class="lg:text-xl text-black40 font-medium leading-9">
+                <p
+                  class="lg:text-xl text-black40 font-medium leading-9 text-center"
+                >
                   Coupon Code
                 </p>
               </div>
@@ -560,19 +562,16 @@
               <hr class="border-dashed" />
               <div
                 id="seat-container"
-                class="flex flex-col justify-between text-black60"></div>
+                class="flex flex-col justify-between text-black60"
+              ></div>
               <hr />
               <div
                 class="flex justify-between text-lg font-semibold text-black60"
               >
-                <div class="text-black100 font-medium">
-                  Total Price
-                </div>
+                <div class="text-black100 font-medium">Total Price</div>
                 <div class="text-black100 font-medium">
                   BDT
-                  <span
-                    id="total-price"
-                    class="text-black100 font-medium"
+                  <span id="total-price" class="text-black100 font-medium"
                     >0</span
                   >
                 </div>
@@ -581,14 +580,10 @@
                 id="discount"
                 class="hidden justify-between text-lg font-semibold text-black60"
               >
-                <div class="text-black100 font-medium">
-                  Discount Price
-                </div>
+                <div class="text-black100 font-medium">Discount Price</div>
                 <div class="text-black100 font-medium">
                   BDT
-                  <span
-                    id="discount-price"
-                    class="text-black100 font-medium"
+                  <span id="discount-price" class="text-black100 font-medium"
                     >0</span
                   >
                 </div>
@@ -615,14 +610,10 @@
               <div
                 class="flex justify-between text-lg font-semibold text-black60"
               >
-                <div class="text-black100 font-medium">
-                  Grand Total
-                </div>
+                <div class="text-black100 font-medium">Grand Total</div>
                 <div class="text-black100 font-medium">
                   BDT
-                  <span
-                    id="grand-price"
-                    class="text-black100 font-medium"
+                  <span id="grand-price" class="text-black100 font-medium"
                     >0</span
                   >
                 </div>
@@ -655,8 +646,6 @@
                   class="p-6 border w-full rounded-xl"
                   placeholder="Enter your email id"
                   type="email"
-                  name=""
-                  id=""
                 />
               </div>
               <button
@@ -733,17 +722,17 @@
     <section>
       <dialog id="my_modal_1" class="modal">
         <div
-          class="modal-box flex flex-col items-center justify-center gap-5 py-32 min-w-[718px]"
+          class="modal-box flex flex-col items-center justify-center gap-5 lg:py-14"
         >
           <div>
             <img src="./images/success.png" alt="" />
           </div>
           <h1 class="text-2xl font-bold text-customGreen">SUCCESS</h1>
-          <h3 class="text-xl font-medium text-black100 text-center">
-            Thank you for Booking Our Bus Seats. <br />
-            We are working hard to find the best service and deals for you
+          <h3 class="text-xl font-medium text-black100 lg:max-w-96 text-center">
+            Thank you for Booking Our Bus Seats. We are working hard to find the
+            best service and deals for you
           </h3>
-          <p class="text-xl font-medium text-black50">
+          <p class="text-xl font-medium text-black50 text-center">
             Shortly you will find a confirmation in your email.
           </p>
 

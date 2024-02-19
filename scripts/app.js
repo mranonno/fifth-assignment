@@ -60,6 +60,7 @@ myInputNumber.addEventListener("input", function () {
   const instantValue = myInputNumber.value;
   const nextButton = document.getElementById("next-btn");
   console.log(instantValue.length);
+
   if (arrays.length > 0 && instantValue.length>=1) {
     nextButton.disabled= false;
     nextButton.classList.remove("opacity-30");
