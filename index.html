@@ -32,7 +32,7 @@
   </head>
   <body class="container mx-auto">
     <!------ Header Section ----->
-    <header class="lg:px-[134px] lg:mt-12 px-4 mt-4">
+    <header id="header" class="lg:px-[134px] lg:mt-12 px-4 mt-4">
       <!------ Nav Section ----->
       <nav class="flex justify-between items-center">
         <!------ Menu Bar ----->
@@ -77,6 +77,7 @@
                 and satisfaction guaranteed.
               </p>
               <button
+                onclick="scrollToBuyNow()"
                 class="bg-[#1dd100] lg:px-[30px] px-[20px] lg:py-5 py-3 rounded-xl text-black text-xl font-bold mb-10"
               >
                 Buy Tickets
@@ -120,7 +121,7 @@
       </div>
     </header>
     <!------ Main Section ----->
-    <main>
+    <main id="main">
       <!------ Best Offer Section ----->
       <section class="lg:mt-48 mt-5 flex flex-col lg:gap-12 gap-6 items-center">
         <h2 class="text-[40px] font-bold text-black100">Best offers for you</h2>
@@ -665,8 +666,9 @@
                   >
                 </div>
               </div>
-              <div id="discount"
-                class=" hidden justify-between text-lg font-semibold text-black60"
+              <div
+                id="discount"
+                class="hidden justify-between text-lg font-semibold text-black60"
               >
                 <div class="font-inter text-black100 font-medium">
                   Discount Price
@@ -680,17 +682,22 @@
                   >
                 </div>
               </div>
-              <div id="input-field" class="relative flex items-center rounded-xl">
+              <div
+                id="input-field"
+                class="relative flex items-center rounded-xl"
+              >
                 <input
                   id="coupon-input"
                   class="font-inter p-5 border w-full rounded-xl"
                   placeholder="Have any coupon?"
                   type="text"
                 />
-                <button id="apply-btn"
+                <button
+                  id="apply-btn"
                   onclick="clickHandler()"
                   class="absolute font-semibold font-inter py-3 right-2 px-5 bg-customGreen opacity-30 text-white rounded-lg"
-                disabled>
+                  disabled
+                >
                   Apply
                 </button>
               </div>
@@ -711,10 +718,11 @@
               </div>
             </div>
             <!------ form side ----->
-            <form class="space-y-6 mt-6">
+            <div class="space-y-6 mt-6">
               <div>
                 <p class="font-inter font-semibold mb-4">Passenger Name*</p>
                 <input
+                  id="name-button"
                   class="font-inter p-6 border w-full rounded-xl"
                   placeholder="Enter your name"
                   type="text"
@@ -723,16 +731,16 @@
               <div>
                 <p class="font-inter font-semibold mb-4">Phone Number*</p>
                 <input
+                  id="number-input"
                   class="font-inter p-6 border w-full rounded-xl"
                   placeholder="Enter your phone number"
                   type="number"
-                  name=""
-                  id=""
                 />
               </div>
               <div>
                 <p class="font-inter font-semibold mb-4">Email ID</p>
                 <input
+                  id="email-input"
                   class="font-inter p-6 border w-full rounded-xl"
                   placeholder="Enter your email id"
                   type="email"
@@ -741,7 +749,10 @@
                 />
               </div>
               <button
-                class="bg-customGreen w-full py-5 rounded-2xl text-xl font-extrabold text-white"
+                id="next-btn"
+                onclick="my_modal_1.showModal()"
+                class="bg-customGreen w-full py-5 rounded-2xl text-xl font-extrabold text-white opacity-30"
+                disabled
               >
                 Next
               </button>
@@ -749,13 +760,13 @@
                 <p class="font-inter"><u>Terms and Conditions</u></p>
                 <p class="font-inter"><u>Cancellation Policy</u></p>
               </div>
-            </form>
+            </div>
           </section>
         </section>
       </section>
     </main>
     <!------ Footer Section ----->
-    <footer class="bg-black100 lg:py-[120px] lg:px-[135px] py-5">
+    <footer id="footer" class="bg-black100 lg:py-[120px] lg:px-[135px] py-5">
       <!------ Web Details & Download Section ----->
       <section
         class="flex lg:flex-row flex-col justify-between items-center mb-12"
@@ -807,9 +818,35 @@
         </ul>
       </section>
     </footer>
-    <!------ second screen ----->
-    <section class="hidden">
-      <div></div>
+    <!------ popup screen ----->
+    <section>
+      <dialog id="my_modal_1" class="modal">
+        <div
+          class="modal-box flex flex-col items-center justify-center gap-5 py-32 min-w-[718px]"
+        >
+          <div>
+            <img src="./images/success.png" alt="" />
+          </div>
+          <h1 class="text-2xl font-bold text-customGreen">SUCCESS</h1>
+          <h3 class="text-xl font-medium text-black100 text-center">
+            Thank you for Booking Our Bus Seats. <br />
+            We are working hard to find the best service and deals for you
+          </h3>
+          <p class="text-xl font-medium text-black50">
+            Shortly you will find a confirmation in your email.
+          </p>
+
+          <div class="modal-action">
+            <form method="dialog">
+              <button
+                class="py-5 px-32 rounded-full text-white text-xl font-semibold bg-customGreen"
+              >
+                Continue
+              </button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </section>
     <script src="./scripts/app.js"></script>
     <script src="./scripts/utility.js"></script>

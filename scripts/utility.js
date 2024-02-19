@@ -38,3 +38,7 @@ function getTotalPrice(id) {
         const newTotal = totalPrice + 550;
         initialTotal.innerText = newTotal;
 }
+
+function scrollToBuyNow() {
+  window.scrollTo(0,2185)
+}
